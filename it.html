@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It Review - Book Haven Reviews</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(45deg, #4e54c8, #8f94fb, #4e54c8);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
+        }
+
+        .book-details {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px auto;
+        }
+
+        .review-section {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Book Haven Reviews</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="horror.html">Horror</a></li>
+                    <li class="nav-item"><a class="nav-link" href="drama.html">Drama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="crime.html">Crime</a></li>
+                    <li class="nav-item"><a class="nav-link" href="action.html">Action</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="book-details col-lg-8">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="public/images/it.jpeg" class="img-fluid rounded" alt="It">
+                </div>
+                <div class="col-md-8">
+                    <h2>It</h2>
+                    <h5 class="text-muted">Stephen King</h5>
+                    <div class="review-section">
+                        <h4>Review</h4>
+                        <p>A sprawling epic of childhood fears and adult trauma. King's imagination runs wild with Pennywise, creating one of literature's most terrifying entities.</p>
+                        <p><strong>Rating:</strong> 4.6/5 <i class="bi bi-star-fill text-warning"></i></p>
+                        <div class="buy-links">
+                            <h4>Buy Now</h4>
+                            <a href="https://www.amazon.com/fake/deadly-chase" class="btn-amazon" target="_blank">Amazon</a>
+                            <a href="https://www.barnesandnoble.com/fake/deadly-chase" class="btn-barnes" target="_blank">Barnes & Noble</a>
+                            <a href="https://www.bookshop.org/fake/deadly-chase" class="btn-bookshop" target="_blank">Bookshop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
